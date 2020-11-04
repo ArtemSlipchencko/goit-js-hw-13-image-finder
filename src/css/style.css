@@ -1,3 +1,7 @@
+body {
+    background-color: grey;
+}
+
 .load-more {
     width: 100px;
     height: 20px;
@@ -6,16 +10,32 @@
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-around;
 
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .photo-card {
-    margin-bottom: 20px;
+    margin: 10px 10px;
+    border: 2px solid white;
+    border-radius: 40px;
+    overflow: hidden;
+
+    transition: box-shadow 0.5s ease;
+}
+
+.photo-card:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 .stats {
     display: flex;
     justify-content: space-around;
+}
+
+.submit {
+    width: 100px;
+    height: 20px;
 }

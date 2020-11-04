@@ -13,7 +13,7 @@ const getUrl = function(word, page) {
 
 };
 
-export const searchImage = function() {
+export const searchImage = function(e) {
 
     let word = input.value;
 
